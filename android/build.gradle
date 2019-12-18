@@ -38,9 +38,6 @@ buildscript {
     }
 }
 
-apply plugin: 'com.android.library'
-apply plugin: 'maven'
-
 android {
     compileSdkVersion safeExtGet('compileSdkVersion', DEFAULT_COMPILE_SDK_VERSION)
     buildToolsVersion safeExtGet('buildToolsVersion', DEFAULT_BUILD_TOOLS_VERSION)
@@ -68,9 +65,12 @@ repositories {
     }
     google()
     jcenter()
+    flatDir { dirs 'libs' }
 }
 
 dependencies {
+    implementation fileTree(dir: "libs", include: ["*.aar"])
+
     //noinspection GradleDynamicVersion
     implementation 'com.facebook.react:react-native:+'  // From node_modules
 }
