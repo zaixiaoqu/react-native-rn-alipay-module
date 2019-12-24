@@ -1,7 +1,7 @@
 {
   "name": "react-native-rn-alipay-module",
   "title": "React Native 支付宝支付",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Native 支付宝支付",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "buffer": "^5.4.3",
-    "jsrsasign": "^8.0.12"
+    "jsrsasign-hermes": "^8.0.12"
   },
   "repository": {
     "type": "git",
