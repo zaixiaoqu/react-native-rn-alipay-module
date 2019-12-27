@@ -1,5 +1,5 @@
 import { NativeModules } from 'react-native';
-import { Alipay } from './lib';
+import Alipay from './lib';
 
 const { RnAlipayModule } = NativeModules;
 
